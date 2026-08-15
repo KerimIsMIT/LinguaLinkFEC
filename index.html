@@ -1,1 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinguaLink | Connecting Cultures</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Import Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Top Marquee -->
+    <div class="marquee-container">
+        <div class="marquee-content">
+            <span>🇺🇸 English 🇫🇷 French 🇷🇺 Russian 🇹🇷 Turkish 🇻🇳 Vietnamese 🇵🇭 Tagalog 🇰🇪 Swahili 🇳🇱 Dutch 🇵🇱 Polish 🇬🇷 Greek 🇸🇪 Swedish 🇮🇩 Indonesian 🇹🇭 Thai 🇮🇱 Hebrew 🇮🇷 Persian 🇺🇦 Ukrainian 🇳🇴 Norwegian 🇩🇰 Danish</span>
+            <span>🇺🇸 English 🇫🇷 French 🇷🇺 Russian 🇹🇷 Turkish 🇻🇳 Vietnamese 🇵🇭 Tagalog 🇰🇪 Swahili 🇳🇱 Dutch 🇵🇱 Polish 🇬🇷 Greek 🇸🇪 Swedish 🇮🇩 Indonesian 🇹🇭 Thai 🇮🇱 Hebrew 🇮🇷 Persian 🇺🇦 Ukrainian 🇳🇴 Norwegian 🇩🇰 Danish</span>
+        </div>
+    </div>
 
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="logo.png" alt="LinguaLink Logo" class="logo-img">
+            </a>
+        </div>
+        <div class="nav-links">
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="contact.html" class="btn-primary">Get Involved</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-title-box">
+                <h1>Connecting cultures, <span class="highlight">One</span><br>Language At a Time</h1>
+            </div>
+            <p>LinguaLink is a global student-led initiative dedicated to making language learning accessible, interactive, and community-driven. Break down borders and discover new perspectives.</p>
+            <a href="contact.html" class="btn-secondary">Contact Us</a>
+        </div>
+        <div class="hero-image">
+            <img src="photo8.jpeg" alt="Students together" class="polygonal-img">
+        </div>
+    </section>
+
+    <!-- The Numbers Section -->
+    <section class="numbers-section">
+        <h2 class="section-title">The Numbers</h2>
+        <div class="numbers-container">
+            <!-- Circles Graphic -->
+            <div class="circles-graphic">
+                <div class="circle circle-blue">RATED THEIR EXPERIENCE 4/5+</div>
+                <div class="circle circle-purple">HELPED THEM LEARN ABOUT DIFFERENT CULTURES</div>
+                <div class="circle circle-orange">HELPED THEM MAKE NEW FRIENDS</div>
+                <div class="circle circle-yellow">WOULD RECOMMEND THE CLUB TO FUTURE STUDENTS</div>
+            </div>
+            <!-- Bar Chart Graphic -->
+            <div class="bar-chart">
+                <div class="bar-wrapper">
+                    <span class="bar-label">92%</span>
+                    <div class="bar bar-blue" style="height: 92%;"></div>
+                </div>
+                <div class="bar-wrapper">
+                    <span class="bar-label">69%</span>
+                    <div class="bar bar-purple" style="height: 69%;"></div>
+                </div>
+                <div class="bar-wrapper">
+                    <span class="bar-label">62%</span>
+                    <div class="bar bar-orange" style="height: 62%;"></div>
+                </div>
+                <div class="bar-wrapper">
+                    <span class="bar-label">100%</span>
+                    <div class="bar bar-yellow" style="height: 100%;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="testimonial-section">
+        <h2 class="section-title">What Students Say?</h2>
+        <div class="slider-container">
+            <button class="slider-btn" onclick="moveSlide(-1)">&#10094;</button>
+            <div class="slider-wrapper">
+                <div class="slider-track" id="sliderTrack">
+                    <!-- Slide 1 -->
+                    <div class="slide">
+                        <div class="testimonial-card">
+                            <p>"It felt like a proper club with an active community and engaging events."</p>
+                            <p class="author">- Nebai</p>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="slide">
+                        <div class="testimonial-card">
+                            <p>"I enjoy learning new languages, and learning about different cultures."</p>
+                            <p class="author">- Jemima Koffi</p>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="slide">
+                        <div class="testimonial-card">
+                            <p>"The diversity of the members."</p>
+                            <p class="author">- Deborah Amenu</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="slider-btn" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+        <div class="slider-dots">
+            <span class="dot active" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section class="events-section">
+        <h2 class="events-title">Latest Community Events</h2>
+        <div class="events-grid">
+            <!-- Image 1 -->
+            <img src="photo3.jpeg" alt="Event Image 1">
+            <!-- Image 2 -->
+            <img src="photo5.jpeg" alt="Event Image 2">
+            <!-- Image 3 -->
+            <img src="photo6.jpeg" alt="Event Image 3">
+            <!-- Image 4 -->
+            <img src="photo5.jpeg" alt="Event Image 4">
+            <!-- Image 5 -->
+            <img src="photo1.jpeg" alt="Event Image 5">
+            <!-- Image 6 -->
+            <img src="photo2.jpeg" alt="Event Image 6">
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-info">
+            <h2 class="footer-logo">Lingualink</h2>
+            <p> @lingualink.ngo</p>
+            <br>
+            <p>lingualinkjoin@gmail.com</p>
+            <p>Cloverly, MD</p>
+        </div>
+        <div class="footer-form">
+            <h3>Connect with Us</h3>
+            <form action="#">
+                <label for="email">Email *</label>
+                <input type="email" id="email" required>
+                <div class="checkbox-wrapper">
+                    <input type="checkbox" id="subscribe" checked>
+                    <label for="subscribe">Yes, subscribe me to your newsletter.</label>
+                </div>
+                <button type="submit" class="btn-submit">Submit</button>
+            </form>
+        </div>
+    </footer>
+
+    <!-- Slider Javascript Script -->
+    <script>
+        let slideIndex = 0;
+        const slides = document.querySelectorAll('.slide');
+        const dots = document.querySelectorAll('.dot');
+        const track = document.getElementById('sliderTrack');
+
+        function moveSlide(n) {
+            slideIndex += n;
+            if (slideIndex >= slides.length) slideIndex = 0;
+            if (slideIndex < 0) slideIndex = slides.length - 1;
+            updateSlider();
+        }
+
+        function currentSlide(n) {
+            slideIndex = n;
+            updateSlider();
+        }
+
+        function updateSlider() {
+            track.style.transform = `translateX(-${slideIndex * 100}%)`;
+            dots.forEach(dot => dot.classList.remove('active'));
+            dots[slideIndex].classList.add('active');
+        }
+    </script>
+</body>
+</html>
