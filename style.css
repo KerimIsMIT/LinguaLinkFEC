@@ -51,13 +51,19 @@ body {
 /* --- Navbar & Logo --- */
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* This pushes the logo left and links right */
     align-items: center;
-    padding: 20px 5%;
-    max-width: 1400px;
-    margin: 0 auto;
+    padding: 15px 5%;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Adds a nice little shadow under the bar */
 }
-
+.nav-links a {
+    font-family: inherit; /* This forces the links to use the exact same font as your body text */
+    text-decoration: none; /* Keeps the underline removed */
+    color: var(--dark-blue); /* Or whatever color you have set */
+    font-weight: bold; /* Optional: makes the links stand out a bit */
+    margin-left: 20px; /* Keeps the spacing between the links */
+}
 .logo-img {
     height: 120px; 
     width: auto;
@@ -534,4 +540,71 @@ body {
     .navbar { flex-direction: column; gap: 15px; }
     .events-grid { grid-template-columns: 1fr; }
     .about-page-section { flex-direction: column; text-align: center; }
+}
+
+/* --- CHAPTERS PAGE STYLES --- */
+.chapters-title {
+    text-align: center;
+    padding: 40px 20px 10px;
+    color: var(--dark-blue);
+}
+
+.chapters-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 40px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.chapter-card {
+    background-color: #ffffff;
+    border: 3px solid #284c43; /* Dark green from the slides */
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.chapter-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+}
+
+.card-header {
+    background-color: #284c43;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.card-header h2 {
+    font-size: 1.2rem;
+    margin: 0 0 5px 0;
+    font-weight: normal;
+}
+
+.card-header h3 {
+    font-size: 2rem;
+    margin: 0;
+    font-style: italic;
+    letter-spacing: 1px;
+}
+
+.chapter-img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-bottom: 3px solid #284c43;
+}
+
+.card-content {
+    padding: 25px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.card-content p {
+    margin-bottom: 15px;
 }
